@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+}
+
+.max-width{
+  max-width: 1300px;  
+  padding: 0 80px;
+  margin: auto;
+}
+
+
+.navbar {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 15px 0;
+   background: maroon;
+   font-family: 'Ubuntu', sans-serif;
+
+}
+
+.navbar .max-width{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #fff;
+font-size: 35px;
+font-weight: 600;
+
+}
+
+.navbar .menu li{
+list-style: none;
+display: inline-block;
+
+}
+
+
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title {
+    position: relative;
+    color: black;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-top: 160px;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width:180px;
+    height: 3px;
+    background: #111;
+    transform: translate(-50%);
+}
+
+.about .title::after{
+    content: "Who am I?";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    padding-top: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 23px;
+    background: #fff;
+    color:maroon;
+    transform: translate(-50%);
+}
+
+.about .about-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .left img{
+    height:550px;
+    width: 350px;
+    object-fit: cover;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    
+}
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+font-size: 25px;
+font-weight: 600;
+margin-bottom: 10px;;
+}
+
+.about .about-content .right .text span{
+    color:maroon;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+}
+
+.about .about-content .colum{
+    width: 50%;
+}
